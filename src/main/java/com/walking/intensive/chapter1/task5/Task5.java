@@ -16,7 +16,7 @@ public class Task5 {
             double p = (a + b + c) / 2;
             return Math.sqrt(p * (p - a) * (p - b) * (p - c));
         }
-        throw new IllegalArgumentException("не выраженный треугольник");
+        throw new IllegalArgumentException("невыраженный треугольник");
     }
 
     /**
@@ -29,7 +29,7 @@ public class Task5 {
             Arrays.sort(heights);
             return heights;
         }
-        throw new IllegalArgumentException("не выраженный треугольник");
+        throw new IllegalArgumentException("невыраженный треугольник");
     }
 
     /**
@@ -87,6 +87,6 @@ public class Task5 {
         double cosA = (a * a + b * b - c * c) / (2 * a * b);
         double sinA = Math.sqrt(1 - cosA * cosA);
 
-        return Math.round(0.5 * a * b * sinA);
+        return 0.5 * a * b * sinA;
     }
 }
